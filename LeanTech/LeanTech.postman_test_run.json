@@ -1,0 +1,414 @@
+{
+	"id": "bc29d79e-cae2-45ee-9bcd-9805f13bda1b",
+	"name": "LeanTech",
+	"timestamp": "2022-10-11T04:04:04.187Z",
+	"collection_id": "23185139-50ab5155-c7ac-4c53-b936-02d20f494aa5",
+	"folder_id": 0,
+	"environment_id": "23185139-abc04b86-e8d9-4e0b-beed-16778d8daff2",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "31b1b877-2e1d-41cb-a236-ec11f2009498",
+			"name": "Create Customer",
+			"url": "https://sandbox.sa.leantech.me/customers/v1",
+			"time": 748,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				748
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "49546128-377a-4416-a54a-b632934fc748",
+			"name": "Get Customer Details",
+			"url": "https://sandbox.sa.leantech.me/customers/v1/app-user-id/jegadeesh_ksa",
+			"time": 226,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				226
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3503edcd-4be5-4d99-ae86-8b20f6fc7ed7",
+			"name": "Get Accounts",
+			"url": "https://sandbox.sa.leantech.me/data/v1/accounts/",
+			"time": 288,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				288
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "03142f8e-b153-4828-bfbf-f29a5d4cbb28",
+			"name": "Get Balance",
+			"url": "https://sandbox.sa.leantech.me/data/v1/balance",
+			"time": 826,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				826
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0c1afe70-5971-4273-b243-d3516111e770",
+			"name": "Get Identity",
+			"url": "https://sandbox.sa.leantech.me/data/v1/identity/",
+			"time": 245,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				245
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "baf8946f-8286-4e5a-9267-33a0fdc3e59e",
+			"name": "Get Transactions",
+			"url": "https://sandbox.sa.leantech.me/data/v1/transactions/",
+			"time": 14401,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14401
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "07f47e80-41d1-4be3-8cec-dcaa6928a9d9",
+			"name": "Get Results",
+			"url": "https://sandbox.sa.leantech.me/data/v1/results/fbda2ae8-37f0-4193-8a48-0927f5b91e66/",
+			"time": 225,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				225
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "680beb55-f7bf-4ff4-ab8b-6ac3713f3c18",
+			"name": "Name Verification",
+			"url": "https://sandbox.sa.leantech.me/insights/v1/name-verification/",
+			"time": 254,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				254
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c0b0bf92-c31b-4151-bd48-22898fff14f9",
+			"name": "Get Entity",
+			"url": "https://sandbox.sa.leantech.me/customers/v1/a20e6f20-52d5-4b36-8e0f-87e910b4aea8/entities/",
+			"time": 236,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				236
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1fce6d7f-1e21-4f83-a936-8479a498fe4a",
+			"name": "Get Entity by ID",
+			"url": "https://sandbox.sa.leantech.me/customers/v1/a20e6f20-52d5-4b36-8e0f-87e910b4aea8/entities/3e7dd6ca-c3f7-36ad-ad3e-fb68ec3c4d53",
+			"time": 230,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				230
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cae4363f-b920-4b4d-87de-96e00532780f",
+			"name": "Get Payment Dest for Customer",
+			"url": "https://sandbox.sa.leantech.me/customers/v1/a20e6f20-52d5-4b36-8e0f-87e910b4aea8/payment-destinations",
+			"time": 612,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				612
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8359e97e-1d36-4ae6-9d06-b7770f552920",
+			"name": "Get Payment Destination",
+			"url": "https://sandbox.sa.leantech.me/payments/v1/destinations/",
+			"time": 1206,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1206
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c7e8db53-96bb-432a-9990-152deb4c66a8",
+			"name": "Create Payment Destination ID",
+			"url": "https://sandbox.sa.leantech.me/payments/v1/destinations/",
+			"time": 690,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				690
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "854c1117-92a6-495c-adf0-3e0781fc7613",
+			"name": "Get Payment Destination by ID",
+			"url": "https://sandbox.sa.leantech.me/payments/v1/destinations/2470ba2d-e3e7-4789-a8d1-9760d152d7d5",
+			"time": 513,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				513
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "af1b2f70-fbab-478c-a62b-a2a943883ac1",
+			"name": "Payment Sources",
+			"url": "https://sandbox.sa.leantech.me/customers/v1/a20e6f20-52d5-4b36-8e0f-87e910b4aea8/payment-sources/",
+			"time": 234,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				234
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6db5c060-0e60-49d1-8b17-603679c2d841",
+			"name": "Create Payment Intent",
+			"url": "https://sandbox.sa.leantech.me/payments/v1/intents/",
+			"time": 3512,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3512
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cf26fe6c-d561-4b11-82b6-d91355362023",
+			"name": "Get Payment Intent",
+			"url": "https://sandbox.sa.leantech.me/payments/v1/intents/e26f8038-9e4a-456e-88d9-78cb325c0bfd",
+			"time": 823,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				823
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b6c91f16-90a5-406f-923a-25c0c022d2ab",
+			"name": "List Banks",
+			"url": "https://sandbox.sa.leantech.me/banks/v1/",
+			"time": 308,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				308
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 25577,
+	"collection": {
+		"requests": [
+			{
+				"id": "31b1b877-2e1d-41cb-a236-ec11f2009498",
+				"method": "POST"
+			},
+			{
+				"id": "49546128-377a-4416-a54a-b632934fc748",
+				"method": "GET"
+			},
+			{
+				"id": "3503edcd-4be5-4d99-ae86-8b20f6fc7ed7",
+				"method": "POST"
+			},
+			{
+				"id": "03142f8e-b153-4828-bfbf-f29a5d4cbb28",
+				"method": "POST"
+			},
+			{
+				"id": "0c1afe70-5971-4273-b243-d3516111e770",
+				"method": "POST"
+			},
+			{
+				"id": "baf8946f-8286-4e5a-9267-33a0fdc3e59e",
+				"method": "POST"
+			},
+			{
+				"id": "07f47e80-41d1-4be3-8cec-dcaa6928a9d9",
+				"method": "GET"
+			},
+			{
+				"id": "680beb55-f7bf-4ff4-ab8b-6ac3713f3c18",
+				"method": "POST"
+			},
+			{
+				"id": "c0b0bf92-c31b-4151-bd48-22898fff14f9",
+				"method": "GET"
+			},
+			{
+				"id": "1fce6d7f-1e21-4f83-a936-8479a498fe4a",
+				"method": "GET"
+			},
+			{
+				"id": "cae4363f-b920-4b4d-87de-96e00532780f",
+				"method": "GET"
+			},
+			{
+				"id": "8359e97e-1d36-4ae6-9d06-b7770f552920",
+				"method": "GET"
+			},
+			{
+				"id": "c7e8db53-96bb-432a-9990-152deb4c66a8",
+				"method": "POST"
+			},
+			{
+				"id": "854c1117-92a6-495c-adf0-3e0781fc7613",
+				"method": "GET"
+			},
+			{
+				"id": "af1b2f70-fbab-478c-a62b-a2a943883ac1",
+				"method": "GET"
+			},
+			{
+				"id": "6db5c060-0e60-49d1-8b17-603679c2d841",
+				"method": "POST"
+			},
+			{
+				"id": "cf26fe6c-d561-4b11-82b6-d91355362023",
+				"method": "GET"
+			},
+			{
+				"id": "b6c91f16-90a5-406f-923a-25c0c022d2ab",
+				"method": "GET"
+			}
+		]
+	}
+}

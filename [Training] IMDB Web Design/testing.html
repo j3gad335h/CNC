@@ -1,0 +1,607 @@
+<!doctype html>
+
+<html dir="ltr" lang="en" class="no-js">
+
+<head>
+	<meta name="_csrf" content="8055c7a5-6455-4c9a-b773-38b3eb4d2cf7" />
+	<meta name="_csrf_header" content="X-CSRF-TOKEN" />
+	<meta name="_csrf_parameterName" content="_csrf" />
+	<title>Raqamyah Platform</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/application-3a755e552802cf0b888d8a4617571dfc.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Almarai&amp;display=swap" rel="stylesheet" type="text/css">
+
+	<link rel="shortcut icon" href="/public/showTenantFavicon" type="image/x-icon">
+	<style type="text/css">
+		/* Shared */
+		.loginBtn {
+			box-sizing: border-box;
+			position: relative;
+			padding: 0 15px 0 46px;
+			border: none;
+			line-height: 34px;
+			white-space: nowrap;
+			border-radius: 0.2em;
+			font-size: 16px;
+			color: #FFF;
+			float: left;
+			text-align: center;
+			margin-bottom: 8px;
+			width: 100%;
+		}
+
+		.loginBtn:focus {
+			outline: none;
+		}
+
+		.loginBtn:active {
+			box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Google */
+		.loginBtn--google {
+			/*font-family: "Roboto", Roboto, arial, sans-serif;*/
+			background: #DD4B39;
+		}
+
+		.loginBtn--google:hover,
+		.loginBtn--google:focus {
+			background: #E74B37;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript" src="/assets/application-91ca06266745ff50a7e959c8f551171a.js"></script>
+	<link rel="stylesheet" href="/assets/jquery-ui-94a45de12ee4d65d0df37d885f5055e6.css" />
+	<script type="text/javascript" src="/assets/jquery-ui.min-24ba53fbdc92f108bb69b19e71b6f9f4.js"></script>
+	<link rel="stylesheet" href="/assets/chosen-8756017151f1760f9282141181ba2f55.css" />
+	<script type="text/javascript" src="/assets/chosen.jquery-53df99a001fb3c08e7465171944d365c.js"></script>
+	<script type="text/javascript" src="/assets/chosen.proto.min-a1530cac71990d8805277b799abfd00b.js"></script>
+	<script type="text/javascript" src="/assets/hijri-converter-4972d3336b0882ecea71c4878b23114c.js"></script>
+
+
+
+
+
+	<script type="text/javascript" src="/assets/jquery.calendars-9081efd842ee90b1ee7a49099439fe74.js"></script>
+	<script type="text/javascript" src="/assets/jquery.calendars.plus-1d418272817027b40d336945d90d1d84.js"></script>
+	<script type="text/javascript" src="/assets/jquery.plugin-2e55526e6a0cd28b4c36cea34360ca89.js"></script>
+	<script type="text/javascript" src="/assets/jquery.calendars.picker-71fe0e252d2a8841839bd76a60001c1f.js"></script>
+	<script type="text/javascript" src="/assets/jquery.calendars.islamic.min-1e484b85696c5043ece0df4f825617aa.js">
+	</script>
+	<script type="text/javascript" src="/assets/jquery.calendars.islamic-ar-462e4c0fa566efe1f95dfe20699c6695.js">
+	</script>
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+	<link href="https://cdn.rawgit.com/kbwood/calendars/2.1.0/dist/css/jquery.calendars.picker.css" rel="stylesheet" />
+
+
+	<script type="text/javascript" src="/assets/parsley-1cf243c37ab4c7b454e4bc95fb6441cf.js"></script>
+	<link rel="stylesheet" href="/assets/parsley-404cf623106db41b9d268b11ac5b124e.css" />
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js">
+	</script>
+
+	<script>
+
+	</script>
+	<meta name="layout" content="mainExternal">
+	<style type="text/css">
+		.hoverCheckbox:after {
+			opacity: 0.3 !important;
+		}
+
+		.hoverCheckbox-active:after {
+			opacity: 1 !important;
+		}
+	</style>
+
+</head>
+
+
+
+<body class="pace-done fixed-header  "
+	style="font-size: 14px;height: 100%; font-family: &#39;Almarai&#39;, sans-serif;">
+	<div class="pace pace-inactive">
+		<div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+			<div class="pace-progress-inner"></div>
+		</div>
+
+		<div class="pace-activity"></div>
+	</div>
+
+	<div id="theme-wrapper">
+
+
+
+		<header class="navbar" id="header-navbar">
+			<div class="container">
+
+
+
+				<a href="www.raqamyah.com" id="logo" class="navbar-brand" style="background: none">
+					<img src="/public/showTenantLogo" alt="" class="normal-logo"/>
+    </a>
+
+					<style type="text/css">
+						#logo.navbar-brand>img {
+							height: 33px;
+						}
+					</style>
+
+					<div class="clearfix">
+						<button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+
+
+						<div class="nav-no-collapse pull-right" id="header-nav">
+
+
+							<ul class="nav navbar-nav pull-right">
+								<li class="dropdown profile-dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span>Register/Login</span> <b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li>
+											<a href="/borrower-create">
+												<i class="fa fa-user"></i>Register as Financee (Debtor)
+											</a>
+										</li>
+
+
+										<li><a href="/company-or-individual-investor">
+												<i class="fa fa-user"></i>Register as Investor</a></li>
+
+
+
+
+										<li>
+											<a href="/">
+												<i class="fa fa-lock"></i>Login
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+						</div>
+
+
+
+						<div class="nav-no-collapse pull-right " id="header-nav">
+							<ul class="nav navbar-nav pull-right">
+								<li class="dropdown profile-dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span>عربي</span><b
+                    class="caret"></b>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right" style="min-width: inherit;">
+
+
+										<li><a href="/?format=&amp;lang=en">
+												<i class="fa fa-language"></i>English
+											</a>
+										</li>
+
+
+
+										<li><a href="/?format=&amp;lang=ar_JO">
+												<i class="fa fa-language"></i>عربي
+											</a>
+										</li>
+
+
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+			</div>
+		</header>
+		<div id="page-wrapper">
+			<div class="row lazyLoadImg" id="content-wrapper" data-src="/public/showSignUpBackgroundImage" style="margin-left: 0; background: center center no-repeat;
+             background-color: #e7ebee; background-size: cover;">
+
+
+				<section id="login">
+					<div class="row">
+
+
+
+						<div class="col-lg-4 col-lg-offset-2" style="margin-top: 70px;">
+							<div class="main-box" style="min-height: 279px;" id="getStartedDiv">
+								<header class="main-box-header clearfix">
+									<h2 class="get-started"><b>Get Started</b>
+
+										<label style="color: red;font-size: 18px">
+                        <b>Testing Environment.</b>
+                    </label>
+
+									</h2>
+								</header>
+
+
+
+
+
+
+
+
+								<div class="main-box-body">
+									<h2 class="text-center">Register as</h2>
+
+									<div style="margin-top: 10px;" class="row">
+
+										<div class="col-lg-6 " id="borrowerSignUp">
+											<img src="/assets/borrower-dc211c191d6e7eb7403e8871e72cbab0.png" alt="" class="center-block" style="width: 64px;"/><br/>
+
+											<div class="row">
+												<div class="col-lg-offset-2 col-lg-8">
+													<a href="/borrower-create"
+														class="btn btn-danger btn-lg btn-block b">
+														Financee (Debtor)
+													</a>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="col-lg-6 " id="investorSignUp">
+											<img src="/assets/investor-797e6604bf1383367861f22c9584a0a0.png" alt="" class="center-block" style="width: 64px;"/><br/>
+
+											<div class="row">
+												<div class="col-lg-offset-2 col-lg-8">
+													<a href="/company-or-individual-investor"
+														class="btn btn-primary btn-lg btn-block">
+														Investor
+													</a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 " style="margin-top: 70px;margin-left: 0%">
+							<div class="main-box" style="min-height: 279px;">
+								<header class="main-box-header clearfix">
+									<h2><b>Please Login</b>
+
+										<label style="color: red;font-size: 18px">
+                                <b>Testing Environment.</b>
+                            </label>
+
+									</h2>
+								</header>
+								<div class="main-box-body clearfix">
+
+
+									<form action="/login/authenticate" method="POST" id="loginForm">
+										<div class="form-group">
+											<label for="username" style="padding-top: 0;">
+                                Email Address
+                            </label>
+											<input type="text" class="form-control" name="username" id="username"
+                                   placeholder="Enter Username" tabindex="1">
+                        </div>
+
+											<div class="form-group">
+												<label for="password" style="padding-top: 0;">
+                                Password
+                            </label>
+												<input type="password" class="form-control" name="password" id="password"
+                                   placeholder="Enter Password" tabindex="2">
+                        </div>
+
+												<div class="form-group pull-right otp-login-helper-links">
+
+													<a href="/forgot-password" class="">
+														Forgot Password</a>
+												</div>
+
+
+
+
+
+												<div class="row" style="margin-top: 35px;">
+													<div class="col-lg-6 pull-left">
+														<input type="button" onclick="submitLoginForm()" class="btn btn-primary btn-lg"
+                                       tabindex="4" value="Login">
+                            </div>
+														<div class="col-lg-6 pull-right">
+
+														</div>
+														<script type="text/javascript">
+															$("label[for=remember_me]").on("focus", function () {
+                                    if (!$("#remember_me").prop('checked'))
+                                        $(this).addClass('hoverCheckbox');
+                                }).on("blur", function () {
+                                    $(this).removeClass('hoverCheckbox');
+                                    $(this).removeClass('hoverCheckbox-active');
+                                }).keydown(function (e) {
+                                    if (e.which == 13) {
+                                        e.preventDefault();
+                                        $(this).trigger('click');
+                                        $(this).toggleClass('hoverCheckbox-active');
+                                        $(this).addClass('hoverCheckbox');
+                                    }
+                                });
+														</script>
+													</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="modal fade" id="concurrentAlertModalId" tabindex="-1" role="dialog"
+					aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="header-bar">
+								<h3 style="text-align: center; border: none; padding: 10px;" class="modal-title">User
+									already Login with Some other Device.</h3>
+								<form action="/login/index" method="post">
+									<div style="text-align: center; padding: 10px;">
+										<button type="button" id="for_submit" onclick="performTwoStepVerification()"
+                            class="btn btn-primary">
+                        Continue
+                    </button>
+										<button type="button" id="for_cancel" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+									</div>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				(function () {
+        document.forms['loginForm'].elements['username'].focus();
+    })();
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: "",
+            xfbml: true,
+            version: 'v2.5'
+        });
+        FB.getLoginStatus(function (response) {
+            if (response.status === 'connected') {
+                getInfo()
+            }
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    function facebookLogin() {
+        FB.login(function (response) {
+            if (response.status === 'connected') {
+                getInfo();
+            }
+        }, {scope: 'email'});
+    }
+
+    function getInfo() {
+        FB.api('/me', 'GET', {fields: 'name, email, first_name, last_name, age_range, gender,id'}, function (response) {
+            var username = response.email;
+            $.ajax({
+                url: "/facebook/login",
+                data: {username: username},
+                success: function (data) {
+                    if (data.statusCode == "200") {
+                        window.location.href = "/";
+                    } else if (data.statusCode == "500") {
+                        window.location.href = "/borrower-create";
+                    }
+                },
+                error: function (data) {
+                    $.notify("Something Went Wrong! Please Check The Input And Try Again.", "error");
+                }
+            })
+        });
+    }
+
+    function performTwoStepVerification() {
+        var userName = $("#username").val();
+        if (userName) {
+            $.ajax({
+                url: "/signUp/checkTwoStepAuthenticator_Ajx",
+                data: {userName: userName},
+                success: function (data) {
+                    if (data.urlForStepVerification) {
+                        $("#loginForm").attr('action', data.urlForStepVerification);
+                    }
+                    $('#loginForm').submit();
+                }, error: function (data) {
+                    console.error(data);
+                    $.notify(errorMsg, "error");
+                    isSuccess = false;
+                }
+            });
+        }
+    }
+
+
+    function checkConcurrentUserSession() {
+        var userName = $("#username").val();
+        if (userName) {
+            $.ajax({
+                url: "/signUp/checkConcurrentUserSession",
+                data: {userName: userName},
+                success: function (data) {
+                    if (data.userSessionId) {
+                        $('#concurrentAlertModalId').modal('show');
+                    } else {
+                        performTwoStepVerification();
+                    }
+                }, error: function (data) {
+                    console.error(data);
+                    $.notify(errorMsg, "error");
+                    isSuccess = false;
+                }
+            });
+        }
+    }
+
+    function submitLoginForm() {
+      
+        checkConcurrentUserSession();
+        
+    }
+
+			</script>
+
+			<footer id="footer-bar" style="opacity: 1;">
+				<p class="col-xs-12" id="footer-copyright">
+					Powered by Raqamyah Platform.
+				</p>
+			</footer>
+		</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<style type="text/css">
+		#header-navbar {
+			background-color: rgb(245, 245, 245) !important;
+		}
+
+		#footer-bar {
+			background:  !important;
+		}
+
+		.btn-primary {
+			background-color:  !important;
+			border-color:  !important;
+		}
+
+		.btn-success {
+			background-color:  !important;
+			border-color:  !important;
+		}
+
+		.btn-danger {
+			background-color:  !important;
+			border-color:  !important;
+		}
+
+		.btn-warning {
+			background-color:  !important;
+			border-color:  !important;
+		}
+
+		.btn-info {
+			background-color:  !important;
+			border-color:  !important;
+		}
+
+		.btn-default {
+			background-color:  !important;
+			border-color:  !important;
+		}
+
+		#nav-col {
+			background-color: rgb(92, 161, 218) !important;
+		}
+
+		.nav-pills>li.active>a,
+		.nav-pills>li.active>a:hover,
+		.nav-pills>li.active>a:focus,
+		#sidebar-nav .nav-pills>li.active>a,
+		#sidebar-nav .nav-pills>li.active>a:hover,
+		#sidebar-nav .nav-pills>li.active>a:focus,
+		.nav-pills>li.open>a,
+		.nav-pills>li.open>a:hover,
+		.nav-pills>li.open>a:focus,
+		#sidebar-nav .nav-pills>li.open>a,
+		#sidebar-nav .nav-pills>li.open>a:hover,
+		#sidebar-nav .nav-pills>li.open>a:focus,
+		.nav-small #nav-col #sidebar-nav .nav-pills>li.open>a,
+		.nav-small #nav-col #sidebar-nav .nav-pills>li.active>a,
+		.nav-small #nav-col-submenu .submenu>.open>a,
+		.nav-small #nav-col-submenu .submenu>.active>a,
+		.nav-small #nav-col-submenu .submenu>li>a:hover {
+			background-color: rgb(92, 161, 218) !important;
+		}
+
+		#sidebar-nav .nav>li>a {
+			color: rgb(255, 255, 255) !important;
+		}
+
+		a {
+			color:  !important;
+		}
+
+		.notifications-list .item a .time {
+			color:  !important;
+		}
+
+		#content-wrapper {
+			background-color: rgb(251, 249, 249) !important;
+		}
+
+		.main-box .main-box-header {
+			background-color: rgb(231, 231, 231) !important;
+		}
+
+		.main-box .main-box-body {
+			background-color: rgb(255, 255, 255) !important;
+		}
+	</style>
+
+
+	<script>
+		$(document).ready(function () {
+        $('.lazyLoadImg').Lazy();
+    });
+    
+	</script>
+</body>
+
+</html>
